@@ -1,0 +1,134 @@
+﻿html, body {
+    background-color: #d8caa8;
+    color: #382513;
+    height: 100%;
+    font-family: Arial;
+}
+
+    body #Container {
+        max-width: 1200px;
+        min-height: 100%;
+        width: 80%;
+        margin: auto;
+    }
+
+/* The header */
+header h1 {
+    font-family: Arial;
+}
+
+/* The Content */
+div#Main {
+    top: 38px;
+    bottom: 48px;
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 4px;
+    background-color: rgb(54, 57, 66);
+    background-color: rgba(54, 57, 66, 0.4);
+}
+
+    /* The BigImage */
+    div#Main div#BigImageDiv {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+        div#Main div#BigImageDiv img {
+            display: block;
+            max-width: 80%;
+            height: auto;
+            margin: auto;
+            border: 4px solid #fff;
+            border-radius: 5px;
+        }
+
+    /* The Thumbnailslide and thumbnails */
+    div#Main div#ThumbnailsDiv {
+        height: auto;
+        width: auto;
+    }
+
+        div#Main div#ThumbnailsDiv ul#ThumbnailsList {
+            list-style-type: none;
+            white-space: nowrap;
+            overflow-x: auto;
+            padding: 0;
+            margin: 0;
+        }
+
+            div#Main div#ThumbnailsDiv ul#ThumbnailsList li {
+                display: inline-block;
+            }
+
+                div#Main div#ThumbnailsDiv ul#ThumbnailsList li a {
+                    display: block;
+                }
+
+                    div#Main div#ThumbnailsDiv ul#ThumbnailsList li a img {
+                        border: 4px solid #fff;
+                        border-radius: 2px;
+                    }
+
+                        div#Main div#ThumbnailsDiv ul#ThumbnailsList li a img.Selected,
+                        div#Main div#ThumbnailsDiv ul#ThumbnailsList li a:hover img {
+                            opacity: 0.4;
+                        }
+
+/* Footer */
+footer {
+    margin: 10px 0;
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 4px;
+    background-color: rgb(54, 57, 66);
+    background-color: rgba(54, 57, 66, 0.4);
+}
+
+    footer div#RightMessageDiv {
+        font-family: Arial;
+        height: 24px;
+        width: auto;
+        background-color: rgb(92, 131, 47);
+        background-color: rgba(92, 131, 47, 0.8);
+        border-radius: 4px;
+        line-height: 24px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+        footer div#RightMessageDiv a {
+            display: block;
+            float: right;
+            margin-top: -1px;
+        }
+
+    footer div#FileUploadDiv .ErrorMessageBox {
+        font-family: Arial;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: auto;
+        height: 24px;
+        border-radius: 4px;
+        background-color: rgb(233, 0, 0);
+        background-color: rgba(233, 0, 0, 0.8);
+    }
+
+    footer div#FileUploadDiv div#FileUploadSubDiv {
+        margin-top: 0;
+    }
+
+    footer div#FileUploadDiv .ErrorMessage {
+        color: #f03;
+    }
+
+    footer div#FileUploadDiv h2 {
+        font-family: Arial;
+        font-size: 1em;
+        margin: 0 0 4px;
+    }
+
+    footer div#FileUploadDiv input#FileUpload1 {
+        margin-top: 10px;
+        padding-right: 20px;
+    }
