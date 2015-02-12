@@ -1,0 +1,101 @@
+﻿body {
+    background-color: #fff8d3;
+    font-size: 62.5%;
+    font-family: 'Bookman Old Style', serif;
+    line-height: 1.2;
+    color: #222028;
+    color: rgba(34, 32, 40, 0.85);
+}
+
+h1, h2 {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    display: block;
+    font-family: 'Bookman Old Style', Arial, sans-serif;
+    font-size: 2rem;
+    color: inherit;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p, a {
+    font-size: 1.2rem;
+    color: inherit;
+}
+
+.container {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+    .container h1 {
+        text-transform: uppercase;
+        text-align: center;
+        
+    }
+
+    .container form {
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+        .container form #TextBox {
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            display: block;
+            width: 100%;
+            height: 15rem;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-radius: 0.3rem 0.3rem;
+            border: solid 1px #c5c7b6;
+            font-family: inherit;
+            color: inherit;
+            text-wrap: normal;
+            line-height: inherit;
+            overflow-y: auto;
+        }
+
+        .container form #ResultLabel {
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            display: block;
+            width: auto;
+            height: auto;
+            line-height: inherit;
+            font-family: inherit;
+            font-size: 1.2rem;
+            color: inherit;
+            text-align: center;
+        }
+
+        .container form #SendButton {
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            display: block;
+            width: auto;
+            height: 1.5rem;
+            padding: 0.2rem;
+            margin: 0.5rem 0;
+            border-radius: 0.3rem 0.3rem;
+            border: outset 2px #c5c7b6;
+            color: inherit;
+            font-family: inherit;
+        }
+
+            .container form #SendButton:active {
+                border: inset 2px #c5c7b6;
+            }
+
+    /* Error page */
+
+    .error {
+        color: red;
+    }
