@@ -1,0 +1,90 @@
+﻿body {
+    background-image: url('Images/geometry.png');
+    font-family: sans-serif;
+    color: #2e0927;
+}
+
+div#Container {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 600px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: rgb(255, 140, 0);
+    background-color: rgba(255, 140, 0, 0.7);
+}
+
+    /* The Header */
+    div#Container header {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        margin: 0 0 20px;
+        text-align: center;
+    }
+
+        div#Container header h1 {
+            padding: 0;
+            margin: 0;
+            cursor: default;            
+        }
+
+    /* The Content area */
+    div#Container div#Content div {
+        width: auto;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    div#Container div#Content .ResultText {
+        display: block;
+    }
+
+    div#Container div#Content .ResultText:first-of-type {
+        margin-bottom: 5px;
+    }
+
+    div#Container div#Content .Button {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 5px 20px;
+        color: rgb(255,140,0);
+        color: rgba(255,140,0,0.9);
+        background-color: rgb(46,9,39);
+        background-color: rgba(46,9,39,0.9);
+        border-radius: 0 20px;
+        border-color: rgb(230,226,175);
+        border-color: rgba(230,226,175,0.9);
+    }
+
+        div#Container div#Content .Button:disabled {
+            opacity: 0.4;
+            -ms-transition: opacity 0.5s;
+            -moz-transition: opacity 0.5s;
+            -webkit-transition: opacity 0.5s;
+            transition: opacity 0.5s;
+        }
+
+        div#Container div#Content .Button:disabled:hover {
+            opacity: 0;
+        }
+
+    div#Container div#Content #NewGameButton {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+
+    div#Container div#Content span.Error {
+        margin-top: 10px;
+        color: red;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    div#Container div#Content div#ErrorList {
+        margin-top: 5px;
+        font-size: small;
+    }
