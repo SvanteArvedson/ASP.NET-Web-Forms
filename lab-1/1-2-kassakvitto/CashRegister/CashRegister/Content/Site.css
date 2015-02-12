@@ -1,0 +1,135 @@
+﻿body {
+    background-color: #b8ae9c;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 2.0rem;
+}
+
+p, a, span, label, dl, dd {
+    font-size: 1.2rem;
+}
+
+div#Container {
+    max-width: 45.0rem;
+    margin: auto;
+}
+
+    div#Container div#Content div#Inputarea {
+        padding-bottom: 3.0rem;
+    }
+
+    div#Container div#Content div#Inputarea input#SendButton {
+        margin: 0.5rem;
+        background-color: #accfcc;
+    }
+
+    /* The Receipt */
+    div#Container div#Content div#ReceiptDiv {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-image: url(Backgrounds/ricepaper.png);
+        width: 13rem;
+        padding: 0.5rem;
+        margin-top: 1.5rem;
+        margin-left: 10rem;
+        box-shadow: #000000 0.3rem 0.2rem 0.5rem;
+        font-family: monospace;
+        text-align: center;
+        line-height: 1.5;
+        /* Experimenting with Transforms */
+        -ms-transform: rotate(-24deg);
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg);
+        -ms-transition: -ms-transform 1s, box-shadow 1s;
+        -moz-transition: -moz-transform 1s, box-shadow 1s;
+        -webkit-transition: -webkit-transform 1s, box-shadow 1s;
+        transition: transform 1s, box-shadow 1s;
+    }
+
+    div#Container div#Content div#ReceiptDiv:hover {
+        /* Experimenting with Transforms */
+        box-shadow: #000000 0.8rem 0.7rem 5.0rem;
+        -ms-transform: scale(1.5,1.5);
+        -moz-transform: scale(1.5,1.5);
+        -webkit-transform: scale(1.5,1.5);
+        transform: scale(1.5,1.5);
+    }
+
+        /* The Receipt Header */
+        div#Container div#Content div#ReceiptDiv header {
+            border-bottom: 1px dashed #000000;
+            padding-bottom: 0.5rem;
+        }
+
+            div#Container div#Content div#ReceiptDiv header h2 {
+                font-size: 0.8rem;
+                margin-bottom: 0;
+            }
+
+            div#Container div#Content div#ReceiptDiv header p {
+                font-size: 0.8rem;
+                margin: 0 auto;
+            }
+
+        /* The ReceiptContent */
+        div#Container div#Content div#ReceiptDiv div#ReceiptContent {
+            padding-top: 0.5rem;
+        }
+
+            div#Container div#Content div#ReceiptDiv div#ReceiptContent dl {
+                margin: 0;
+                padding: 0;
+            }
+
+            div#Container div#Content div#ReceiptDiv div#ReceiptContent dt {
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                clear: left;
+                float: left;
+                width: 6.0rem;
+                margin: 0;
+                text-align: left;
+                font-size: 0.8rem;
+                padding-right: 0.2rem;
+            }
+
+            div#Container div#Content div#ReceiptDiv div#ReceiptContent dd {
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                float: left;
+                width: 6.0rem;
+                margin: 0;
+                text-align: right;
+                font-size: 0.8rem;
+                padding-left: 0.2rem;
+            }
+
+                div#Container div#Content div#ReceiptDiv div#ReceiptContent dd:last-of-type, div#ReceiptContent dt:last-of-type {
+                    font-weight: bold;
+                    padding-bottom: 0.5rem;
+                }
+
+        /* The Receipt Footer */
+        div#Container div#Content div#ReceiptDiv footer {
+            clear: both;
+            border-top: 1px dashed #000000;
+            padding-top: 0.5rem;
+        }
+
+            div#Container div#Content div#ReceiptDiv footer p {
+                font-size: 0.8rem;
+                margin: 0 auto;
+            }
+
+/* ErrorMessage */
+.field-validation-error {
+    display: block;
+    color: #8a0917;
+    font-size: 0.8rem;
+}
