@@ -1,0 +1,278 @@
+﻿/* General styles */
+html, body {
+    background-image: url('Background/Background-texture.png');
+}
+
+.pageheader {
+    display: inline;
+}
+
+h1.pageheader:after {
+    content: " ";
+}
+
+h2.pageheader {
+    font-style: italic;
+}
+
+.custom-label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.button-list li {
+    display: inline;
+    float: right;
+    padding: 0;
+    margin: 0 0 0 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.button {
+    padding: 3px;
+}
+
+.defaultValue {
+    font-style: italic;
+}
+
+.alert-box {
+    border: none;
+}
+
+    .alert-box p {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+    }
+
+    .alert-box.error {
+        background-color: #c60f13;
+    }
+
+span.error {
+    margin-bottom: 0;
+}
+
+.no-data-text {
+    font-size: 0.8rem;
+}
+
+.noJavascript {
+    font-size: large;
+    font-weight: bold;
+}
+
+/* Navigation */
+
+.side-nav {
+    padding: 5px 0 0;
+}
+
+    .side-nav li a {
+        margin: 0;
+    }
+
+/* Listing booklets */
+.booklet-card {
+    padding: 10px !important;
+    margin: 5px !important;
+    border: 1px solid #8c8979;
+    background-color: #fff;
+}
+
+.booklet-card-info p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.booklet-card-buttons {
+    padding: 0 !important;
+}
+
+/* Booklet details */
+.booklet-details-card {
+    padding: 10px 10px 20px !important;
+    margin: 5px !important;
+    border: 1px solid #8c8979;
+    background-color: #fff;
+    position: relative;
+}
+
+.booklet-details-card-info {
+    margin-bottom: 15px;
+}
+
+    .booklet-details-card-info p {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+.booklet-details-card-pieces p {
+    margin: 0;
+}
+
+.booklet-details-card-pieces .custom-label {
+    display: block;
+    margin: 0;
+}
+
+.booklet-details-card-pieces table thead tr th {
+    font-size: 0.85rem;
+}
+
+.booklet-details-card-pieces table tbody tr td {
+    font-size: 0.8rem;
+}
+
+.booklet-details-card-pieces table tbody td.buttonColumn {
+    text-align: center;
+}
+
+.booklet-details-card-other {
+    position: relative;
+    padding: 0 8px 0 0 !important;
+}
+
+.booklet-details-card-other-note, .booklet-details-card-other-borrowedTo {
+    padding: 0 !important;
+}
+
+.booklet-details-card-other p {
+    font-size: 0.8rem;
+}
+
+.booklet-details-card-other-note .custom-label {
+    display: block;
+}
+
+.booklet-details-card-buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 0 !important;
+}
+
+    .booklet-details-card-buttons .button-list li {
+        display: inline;
+        float: right;
+        padding: 0;
+        margin: 0 0 0 5px;
+        width: 30px;
+        height: 30px;
+    }
+
+        .booklet-details-card-buttons .button-list li:first-child {
+            margin: 0 8px 0 5px;
+        }
+
+/* Booklet details/insert/edit/delete */
+input[type="text"], textarea, select {
+    font-weight: normal;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+a[title="Spara"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a[title="Radera"] {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* Booklet edit */
+
+.booklet-edit-card {
+    padding: 10px 10px 20px !important;
+    margin: 5px !important;
+    border: 1px solid #8c8979;
+    background-color: #fff;
+    position: relative;
+}
+
+/* Booklet create */
+
+.booklet-create-card {
+    padding: 10px 10px 20px !important;
+    margin: 5px !important;
+    border: 1px solid #8c8979;
+    background-color: #fff;
+    position: relative;
+}
+
+/* Booklet delete */
+
+.booklet-delete-card {
+    padding: 10px !important;
+    margin: 5px !important;
+    border: 1px solid #8c8979;
+    background-color: #fff;
+    position: relative;
+}
+
+    .booklet-delete-card p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+
+span.title {
+    font-weight: bold;
+}
+
+.booklet-delete-buttons {
+    margin-top: 10px;
+}
+
+    .booklet-delete-buttons a {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+        margin: 0 5px 0 0;
+    }
+
+/* Error-page */
+
+.error-card {
+    padding: 10px !important;
+    margin: 5px !important;
+    border: 1px solid #8c8979;
+    background-color: #fff;
+    position: relative;
+}
+
+    .error-card p {
+        font-size: 0.8rem;
+    }
+
+    .error-card a {
+        margin: 0;
+    }
+
+/* Start-page */
+
+.startpage-card {
+    padding: 10px !important;
+    margin: 5px !important;
+    border: 1px solid #8c8979;
+    background-color: #fff;
+    position: relative;
+}
+
+    .startpage-card p {
+        font-size: 0.8rem;
+    }
+
+/* When printing */
+@media print {
+
+    .side-nav, .alert-box, .button {
+        display: none;
+    }
+
+    .booklet-details-card, .booklet-create-card, .booklet-delete-card, .booklet-edit-card {
+        border: none;
+    }
+}

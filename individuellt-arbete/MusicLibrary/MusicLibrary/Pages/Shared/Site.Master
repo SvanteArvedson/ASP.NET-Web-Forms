@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MusicLibrary.Pages.Shared.Site" ViewStateMode="Disabled" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv-se">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Svantes Musikbibliotek</title>
+    <%: Styles.Render("~/Content/css") %>
+    <%: Scripts.Render("~/Scripts/modernizr") %>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Path="~/Scripts/vendor/fastclick.js" />
+                <asp:ScriptReference Path="~/Scripts/foundation.min.js" />
+                <asp:ScriptReference Path="~/Scripts/siteScript.js" />
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div id="Content" class="row">
+            <header class="small-12 columns">
+                <h1 class="pageheader">Svantes Musikbibliotek</h1>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderHeader" runat="server" />
+            </header>
+            <div id="Main">
+                <noscript>
+                    <p class="noJavascript alert-box error">Den här sidan kräver JavaScript för att fungera. Aktivera JavaScript i din webbläsare innan du fortsätter använda sidan.</p>
+                </noscript>
+                <div class="small-12 medium-3 large-2 columns">
+                    <nav>
+                        <ul class="side-nav">
+                            <li>
+                                <asp:LinkButton ID="StartpageLinkButton" CssClass="button tiny expand" runat="server" ToolTip="Gå till Startsidan" Text="Startsida" OnClick="StartpageLinkButton_Click" CausesValidation="false" />
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="BookletsLinkButton" CssClass="button tiny expand" runat="server" ToolTip="Gå till nothäftelistan" Text="Nothäften" OnClick="BookletsLinkButton_Click" CausesValidation="false" />
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="CreateBookletLinkButton" CssClass="button tiny expand" runat="server" Text="Lägg till nothäfte" ToolTip="Skapa nytt nothäfte" OnClick="CreateBookletLinkButton_Click" CausesValidation="false" />
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="small-12 medium-9 large-10 columns">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server" />
+                </div>
+            </div>
+            <footer>
+            </footer>
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderScripts" runat="server" />
+        <script>
+            $(document).foundation();
+        </script>
+    </form>
+</body>
+</html>
