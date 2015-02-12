@@ -1,0 +1,87 @@
+﻿html, body {
+    max-width: 100%;
+    background-color: #f2ede4;
+    font-family: 'Gill Sans MT', sans-serif;
+}
+
+div#Container {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+
+    /* Main content, the Table */
+    div#Container div#Main table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        div#Container div#Main table thead tr {
+            border-bottom: 2px solid #666a73;
+        }
+
+        div#Container div#Main table tbody tr {
+            border-bottom: 1px solid #8c8681;
+        }
+
+            div#Container div#Main table tbody tr:hover {
+                background-color: #d6d1c7;
+            }
+
+        div#Container div#Main table thead tr th {
+            text-align: left;
+            padding: 5px;
+        }
+
+        div#Container div#Main table tbody tr td {
+            padding: 5px;
+        }
+
+/* All the buttons */
+.Button {
+    background-color: #d9d1c7;
+}
+
+/* Error boxes */
+.ErrorBox {
+    border: 4px solid #c40809;
+    color: #c40809;
+    padding: 16px 0 16px 40px;
+}
+
+    .ErrorBox ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        .ErrorBox ul li {
+            list-style: none;
+        }
+
+.Error {
+    color: #c40809;
+}
+
+/* Right boxes */
+.RightBox {
+    color: #048f08;
+    border: 4px solid #048f08;
+    padding: 0 0 16px 40px;
+}
+
+    .RightBox .RightMessage {
+        float: left;
+        padding: 16px 0 0;
+        margin: 0;
+    }
+
+    .RightBox #CloseIconHyperLink {
+        display: block;
+        float: right;
+        padding: 0;
+        margin: 0;
+    }
+
+    .RightBox #ClearBoth {
+        clear: both;
+    }
