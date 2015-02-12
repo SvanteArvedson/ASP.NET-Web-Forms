@@ -1,0 +1,141 @@
+﻿body {
+    background-color: #fcfae1;
+    color: #4c1b1b;
+    font-family: 'Malgun Gothic', sans-serif;
+}
+
+div#Container {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.0rem;
+}
+
+    /* The header */
+    div#Container header {
+        width: 100%;
+        background-color: #4c1b1b;
+        color: #fcfae1;
+    }
+
+        div#Container header h1 {
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            /*font-family: 'Malgun Gothic', sans-serif;*/
+        }
+
+    /* Positioning of the Content Boxes */
+    div#Container div#Content {
+        width: 100%;
+    }
+
+        div#Container div#Content div.ContentBox {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 40%;
+            padding: 5px;
+            /*margin-left: 5%;
+            margin-right: 5%;*/
+        }
+
+
+        div#Container div#Content div#ContentBoxLeft {
+            float: left;
+        }
+
+        div#Container div#Content div#ContentBoxRight {
+            float: right;
+        }
+
+        /* Styling of ContentBoxLeft */
+        /* Error messages */
+        div#Container div#Content div#ContentBoxLeft .Error {
+            color: #b9121b;
+            font-weight: bold;
+        }
+
+        div#Container div#Content div#ContentBoxLeft #ErrorList {
+            padding-bottom: 20px;
+        }
+
+        div#Container div#Content div#ContentBoxLeft #ErrorList ul li {
+            list-style-image: url('Images/ListBullet.png');
+            list-style-position: outside;
+        }
+
+        div#Container div#Content div#ContentBoxLeft .InputBox {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        div#Container div#Content div#ContentBoxLeft .Label {
+            display: inline-block;
+            width: 46%;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        div#Container div#Content div#ContentBoxLeft .TextBox {
+            display: inline-block;
+            width: 40%;
+        }
+
+        div#Container div#Content div#ContentBoxLeft .LabelRadioButtons {
+            width: 100%;
+            font-weight: bold;
+        }
+
+        div#Container div#Content div#ContentBoxLeft ul {
+            margin: 5px 0 5px 5%;
+            padding: 0;
+        }
+
+            div#Container div#Content div#ContentBoxLeft ul li {
+                list-style: none;
+                padding: 0;
+            }
+
+        /* The Button */
+        div#Container div#Content div#ContentBoxLeft input#ConvertTemperatureButton {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 100%;
+            background-color: #4c1b1b;
+            color: #fcfae1;
+            padding: 2px;
+            font-size: 1.0rem;
+            font-weight: bold;
+        }
+
+        /* Styling of ContentBoxRight */
+        /* The table */
+        div#Container div#Content div#ContentBoxRight table {
+            width: 100%;
+            border: solid 2px #4c1b1b;
+            border-collapse: collapse;
+        }
+
+            div#Container div#Content div#ContentBoxRight table tr:nth-of-type(even) {
+                background-color: #fcfae1;
+            }
+
+            div#Container div#Content div#ContentBoxRight table tr:nth-of-type(odd) {
+                background-color: #f6e497;
+            }
+
+            div#Container div#Content div#ContentBoxRight table tr:first-child {
+                background-color: #4c1b1b;
+                color: #fcfae1;
+            }
+
+            div#Container div#Content div#ContentBoxRight table tr th, div#ContentBoxRight table tr td {
+                padding: 4px 10px;
+                text-align: center;
+            }
+
+    div#Container footer {
+        clear: both;
+    }
